@@ -1,3 +1,24 @@
-<p>
-  AllAnimals works!
-</p>
+<div class="container">
+  <div *ngFor="let animal of animalData">
+    <!-- <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Type</td>
+          <td>Likes</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let animal of animalData">
+          <td>{{animal.name}}</td>
+          <td>{{animal.species}}</td>
+          <td>{{animal.food.likes[0]}}</td>
+        </tr>
+      </tbody>
+    </table> -->
+    
+    <p>{{animal.name}}</p>
+
+  </div>
+</div>

@@ -16,10 +16,10 @@ export class AnimalsComponent implements OnInit {
     
   }
   loadAll() {
-    this.router.navigateByUrl('all');
+    this.router.navigateByUrl('animals/all');
   }
   loadFive() {
-    this.router.navigateByUrl('five');
+    this.router.navigateByUrl('animals/five');
   }
 
 }

@@ -1,4 +1,8 @@
+<router-outlet></router-outlet>
 <div class="container">
-  <button (click)="loadAll()">All Animals</button>
-  <button (click)="loadFive()">Five Animals</button>
+  <!-- <button (click)="loadAll()">All Animals</button>
+  <button (click)="loadFive()">Five Animals</button> -->
+
+  <button routerLink="all" style="position: absolute; left: 190px; z-index: 100;" >All Animals</button>
+  <button routerLink="five" style="position: absolute; left: 400px; z-index: 100;"  >Five Animals</button>
 </div>

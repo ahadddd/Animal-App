@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../Data.service';
 
 @Component({
   selector: 'app-AllAnimals',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllAnimalsComponent implements OnInit {
 
-  constructor() { }
+  animalData: any;
+
+  constructor(private ds: DataService) { }
 
   ngOnInit() {
+    this.animalData = this.ds.getData();
   }
 
 }

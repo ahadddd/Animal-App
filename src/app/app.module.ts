@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule} from '@angular/router'
 import { AppComponent } from './main/app.component';
 import { AnimalsComponent } from './main/Animals/Animals/Animals.component';
+import { AnimalsModule } from '../app/main/Animals/Animals.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { AnimalsComponent } from './main/Animals/Animals/Animals.component';
       },
       {
         path: 'animals',
-        // loadChildren: () => import('../app/main/Animals/Animals.module').then(mod => mod.AnimalsModule)
+        loadChildren: () => import('../app/main/Animals/Animals.module').then(mod => mod.AnimalsModule),
         component: AnimalsComponent
       }
     ])

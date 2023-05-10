@@ -1,14 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
+import {RouterModule} from '@angular/router'
+import { AppComponent } from './main/app.component';
+import { AnimalsComponent } from './main/Animals/Animals/Animals.component';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: AppComponent
+      },
+      {
+        path: 'animals',
+        // loadChildren: () => import('../app/main/Animals/Animals.module').then(mod => mod.AnimalsModule)
+        component: AnimalsComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

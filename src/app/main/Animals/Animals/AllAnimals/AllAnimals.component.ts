@@ -14,6 +14,7 @@ export class AllAnimalsComponent implements OnInit {
 
   ngOnInit() {
     this.animalData = this.ds.getData();
+    console.log(this.animalData)
   }
 
 }

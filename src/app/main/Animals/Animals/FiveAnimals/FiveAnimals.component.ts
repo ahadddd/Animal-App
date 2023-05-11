@@ -8,7 +8,7 @@ import { DataService } from '../Data.service';
 })
 export class FiveAnimalsComponent implements OnInit {
   
-  animalData: any; 
+  animalData: any = []; 
   constructor(private ds: DataService) { }
 
   ngOnInit() {

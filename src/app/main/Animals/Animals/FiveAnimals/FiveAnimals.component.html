@@ -1,3 +1,19 @@
 <div class="container">
-  <h1> Five Animals</h1>
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Type</td>
+        <td>Likes</td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let animal of animalData">
+        <td>{{animal.name}}</td>
+        <td>{{animal.species}}</td>
+        <td>{{animal.foods.likes[0]}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

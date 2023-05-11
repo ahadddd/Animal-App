@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {RouterModule} from '@angular/router'
+import { RouterModule } from '@angular/router'
 import { AnimalsComponent } from './Animals/Animals.component';
 import { AllAnimalsComponent } from './Animals/AllAnimals/AllAnimals.component';
 import { FiveAnimalsComponent } from './Animals/FiveAnimals/FiveAnimals.component';
@@ -19,6 +19,6 @@ import { FiveAnimalsComponent } from './Animals/FiveAnimals/FiveAnimals.componen
       }
     ])
   ],
-  declarations: [AnimalsComponent]
+  declarations: [AnimalsComponent, FiveAnimalsComponent, AllAnimalsComponent]
 })
 export class AnimalsModule { }

@@ -1,6 +1,5 @@
 <div class="container">
-  <div *ngFor="let animal of animalData">
-    <!-- <table>
+    <table>
       <thead>
         <tr>
           <td>Name</td>
@@ -13,12 +12,10 @@
         <tr *ngFor="let animal of animalData">
           <td>{{animal.name}}</td>
           <td>{{animal.species}}</td>
-          <td>{{animal.food.likes[0]}}</td>
+          <td>{{animal.foods.likes[0]}}</td>
         </tr>
       </tbody>
-    </table> -->
-    
-    <p>{{animal.name}}</p>
+    </table>
 
-  </div>
+    
 </div>
